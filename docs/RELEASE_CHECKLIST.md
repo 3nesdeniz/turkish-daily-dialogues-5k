@@ -13,4 +13,4 @@
 - [x] `CHANGELOG.md` includes the release.
 - [x] `CITATION.cff` and license metadata are valid.
 - [x] No repository, Hugging Face, DOI, download, or human-review claim is made before it is true.
-- [ ] The Hugging Face Viewer renders all three configured Parquet splits after publication.
+- [x] The Hugging Face Viewer renders all three configured Parquet splits after publication.

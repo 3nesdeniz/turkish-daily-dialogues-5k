@@ -9,6 +9,7 @@ license = "CC-BY-4.0"
 parquet = ["pyarrow==21.0.0"]
 
 [tool.ruff]
+required-version = "==0.16.0"
 line-length = 120
 target-version = "py310"
 

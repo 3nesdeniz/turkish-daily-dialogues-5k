@@ -146,6 +146,8 @@ The repository is the source of truth. Do not edit generated rows manually.
 ```bash
 python -m pip install --require-hashes -r requirements-dev.lock
 make reproduce
+make lint
+make format-check
 make validate
 make test
 shasum -a 256 -c SHA256SUMS
@@ -157,6 +159,7 @@ shasum -a 256 -c SHA256SUMS
 - Runtime model inference: no
 - Locale or runtime-clock dependency: no
 - JSON serialization: UTF-8, newline-delimited, stable field insertion order
+- Python formatter/linter: Ruff `0.16.0` (version enforced in `pyproject.toml`)
 
 The source dialogues, composition rules, split logic, and Parquet schema live in [scripts/generate_dataset.py](scripts/generate_dataset.py). The full methodology is documented in [docs/GENERATION_METHODOLOGY.md](docs/GENERATION_METHODOLOGY.md).
 

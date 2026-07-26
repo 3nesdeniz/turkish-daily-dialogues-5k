@@ -19,8 +19,18 @@ jobs:
           cache: pip
       - name: Install QA dependency
         run: python -m pip install --require-hashes -r requirements-dev.lock
-      - name: Validate checked-in artifacts
-        run: python scripts/validate_dataset.py --root . --no-write-report
+      - name: Check Python formatting and lint
+        run: |
+          ruff format --check scripts tests
+          ruff check scripts tests
+      - name: Validate checked-in artifacts and report freshness
+        run: |
+          tmp_reports="$(mktemp -d)"
+          cp reports/validation.json "$tmp_reports/validation.json"
+          cp reports/QA_REPORT.md "$tmp_reports/QA_REPORT.md"
+          python scripts/validate_dataset.py --root .
+          cmp "$tmp_reports/validation.json" reports/validation.json
+          cmp "$tmp_reports/QA_REPORT.md" reports/QA_REPORT.md
       - name: Run tests
         run: python -m unittest discover -s tests -v
       - name: Reproduce release artifacts

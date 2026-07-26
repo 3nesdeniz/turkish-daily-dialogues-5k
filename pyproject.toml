@@ -1,0 +1,17 @@
+[project]
+name = "turkish-daily-dialogues-5k"
+version = "1.0.0"
+description = "Deterministic, synthetic Turkish daily-life multi-turn conversations"
+requires-python = ">=3.10"
+license = "CC-BY-4.0"
+
+[project.optional-dependencies]
+parquet = ["pyarrow==21.0.0"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]

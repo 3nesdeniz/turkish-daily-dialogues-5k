@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "dataset": "turkish-daily-dialogues-5k",
+  "version": "1.0.0",
+  "schema": {
+    "valid_records": 5000,
+    "unique_ids": 5000,
+    "unique_record_seeds": 5000
+  },
+  "distributions": {
+    "split": {
+      "test": 525,
+      "train": 3950,
+      "validation": 525
+    },
+    "topic_count": 35,
+    "topic_min": 142,
+    "topic_max": 143,
+    "topic_split_cells": 105,
+    "scenario_family_cells": 1330,
+    "scenario_families_per_topic_split": {
+      "train": 30,
+      "validation": 4,
+      "test": 4
+    },
+    "turn_count": {
+      "4": 1000,
+      "6": 2000,
+      "8": 2000
+    },
+    "formality": {
+      "formal": 428,
+      "informal": 1714,
+      "polite": 2858
+    },
+    "relationship_count": 35
+  },
+  "split_files": {
+    "train": 3950,
+    "validation": 525,
+    "test": 525
+  },
+  "duplicates": {
+    "normalized_exact_duplicate_groups": 0,
+    "near_duplicate_threshold": 0.8,
+    "candidate_method": "exhaustive word-trigram Jaccard with safe size-ratio pruning",
+    "pairs_in_scope": 12497500,
+    "near_duplicate_pairs": 0,
+    "cross_split_near_duplicate_pairs": 0,
+    "maximum_similarity": 0.736842,
+    "maximum_pair": [
+      "trdd5k-toplu-tasima-114",
+      "trdd5k-toplu-tasima-098"
+    ],
+    "maximum_cross_split_similarity": 0.724138,
+    "maximum_cross_split_pair": [
+      "trdd5k-tamir-ve-servis-130",
+      "trdd5k-tamir-ve-servis-025"
+    ]
+  },
+  "content": {
+    "pii_pattern_hits": 0,
+    "unsafe_phrase_hits": 0,
+    "unresolved_template_markers": 0,
+    "total_turns": 32000,
+    "unique_normalized_turns": 5291,
+    "most_repeated_turn_count": 57,
+    "most_repeated_turn_share": 0.001781,
+    "most_repeated_turn_preview": "istasyon girişindeki cihazlar açık"
+  },
+  "samples": {
+    "topic_split_sample_records": 105,
+    "topic_split_pairs": 105,
+    "topic_turn_sample_records": 105,
+    "topic_turn_pairs": 105
+  },
+  "manifest": {
+    "artifact_count": 9,
+    "checksums_verified": 10
+  },
+  "parquet": {
+    "status": "passed",
+    "files": 3,
+    "rows_checked": 5000,
+    "nested_messages_preserved": true
+  }
+}

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Turkish Daily Dialogues 5K"
+type: dataset
+authors:
+  - family-names: Deniz
+    given-names: Enes
+version: 1.0.0
+date-released: 2026-07-26
+license: CC-BY-4.0
+repository-code: "https://github.com/3nesdeniz/turkish-daily-dialogues-5k"
+url: "https://huggingface.co/datasets/3nesdeniz/turkish-daily-dialogues-5k"
+abstract: >-
+  A deterministic synthetic dataset of exactly 5,000 multi-turn Turkish
+  daily-life conversations across 35 topics, with explicit AI-assisted
+  provenance and grouped train, validation, and test splits.
+keywords:
+  - Turkish
+  - dialogue
+  - conversational AI
+  - synthetic data
+  - natural language processing

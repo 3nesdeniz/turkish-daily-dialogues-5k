@@ -1,0 +1,140 @@
+{
+  "dataset": "turkish-daily-dialogues-5k",
+  "version": "1.0.0",
+  "generated_with": {
+    "script": "scripts/generate_dataset.py",
+    "generator_version": "1.0.0",
+    "seed": 20260726,
+    "network_required": false,
+    "runtime_model_inference": false,
+    "ai_assisted_authoring": true
+  },
+  "record_count": 5000,
+  "topic_count": 35,
+  "split_strategy": {
+    "unit": "scenario_family",
+    "families_per_topic": 38,
+    "train_families_per_topic": 30,
+    "validation_families_per_topic": 4,
+    "test_families_per_topic": 4
+  },
+  "distributions": {
+    "split": {
+      "test": 525,
+      "train": 3950,
+      "validation": 525
+    },
+    "topic": {
+      "Aile planları": 143,
+      "Bahçe ve bitki bakımı": 142,
+      "Berber ve kuaför randevusu": 143,
+      "Ev eşyası tamiri": 143,
+      "Ev işleri": 143,
+      "Evcil hayvan bakımı": 143,
+      "Evde yemek hazırlama": 143,
+      "Fatura ve ödeme takibi": 143,
+      "Giyim alışverişi": 143,
+      "Günlük resmî işlemler": 142,
+      "Günlük teknoloji desteği": 143,
+      "Günlük telefon görüşmesi": 142,
+      "Hava durumuna göre plan": 143,
+      "Hobi ve kurs": 143,
+      "Kafede buluşma": 143,
+      "Kahvaltı planı": 142,
+      "Kargo ve teslimat": 143,
+      "Komşuluk": 143,
+      "Kutlama organizasyonu": 143,
+      "Kütüphane kullanımı": 143,
+      "Market alışverişi": 143,
+      "Okul ve ders planı": 143,
+      "Otel konaklaması": 143,
+      "Park ve doğa gezisi": 143,
+      "Restoran rezervasyonu": 143,
+      "Sağlık randevusu planlama": 143,
+      "Seyahat planlama": 143,
+      "Sinema ve etkinlik planı": 143,
+      "Spor aktivitesi planlama": 143,
+      "Taksi yolculuğu": 143,
+      "Toplu taşımayla yolculuk": 143,
+      "Uzaktan çalışma": 143,
+      "Yol tarifi sorma": 143,
+      "Çocuklarla günlük plan": 142,
+      "İş günü koordinasyonu": 143
+    },
+    "formality": {
+      "formal": 428,
+      "informal": 1714,
+      "polite": 2858
+    },
+    "turn_count": {
+      "4": 1000,
+      "6": 2000,
+      "8": 2000
+    }
+  },
+  "artifacts": [
+    {
+      "path": "data/all.jsonl",
+      "sha256": "2d393822f380a1c6496ab7fbb8fbb61d9323f314261ed6ccd88a9deec7ddeb4e",
+      "bytes": 5434577,
+      "records": 5000,
+      "media_type": "application/x-ndjson"
+    },
+    {
+      "path": "data/test.jsonl",
+      "sha256": "d3907c86283d894e45220501b6848e7cd0befc7a711fe62cbe8cad8533495ad2",
+      "bytes": 569065,
+      "records": 525,
+      "media_type": "application/x-ndjson"
+    },
+    {
+      "path": "data/test.parquet",
+      "sha256": "9e559a59cb965505bca17bb30199c82c949b641a12c89624658e5d406c99f849",
+      "bytes": 43625,
+      "records": 525,
+      "media_type": "application/vnd.apache.parquet"
+    },
+    {
+      "path": "data/train.jsonl",
+      "sha256": "4e11cb6e311b355235a8b3174ecc3c6569d48e32f487bb199853035b7389047f",
+      "bytes": 4290307,
+      "records": 3950,
+      "media_type": "application/x-ndjson"
+    },
+    {
+      "path": "data/train.parquet",
+      "sha256": "51d54bb0a253f6b3a4215c83e3179df78442a0fdf95899799c834cc8cf7503db",
+      "bytes": 133385,
+      "records": 3950,
+      "media_type": "application/vnd.apache.parquet"
+    },
+    {
+      "path": "data/validation.jsonl",
+      "sha256": "3fbab155a66359f9bb32278cd0e638d5bea37a274ed06a1c24a4220c7bba5962",
+      "bytes": 575205,
+      "records": 525,
+      "media_type": "application/x-ndjson"
+    },
+    {
+      "path": "data/validation.parquet",
+      "sha256": "bea1c4d79f4d4b8227267fd38043981f6f6873de19a41fcc655b8538912f7d08",
+      "bytes": 43881,
+      "records": 525,
+      "media_type": "application/vnd.apache.parquet"
+    },
+    {
+      "path": "samples/topic-split-samples.jsonl",
+      "sha256": "14a961fecf8d46ab8f2e3624978076897da65a806e1ec6fbee638f8fcb6f9ee7",
+      "bytes": 114414,
+      "records": 105,
+      "media_type": "application/x-ndjson"
+    },
+    {
+      "path": "samples/topic-turn-samples.jsonl",
+      "sha256": "79196d767dd72368787dfe5b2a64591f6c3549b577faa93874b4d86cbf5ab404",
+      "bytes": 110080,
+      "records": 105,
+      "media_type": "application/x-ndjson"
+    }
+  ]
+}
